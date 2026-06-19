@@ -9,6 +9,14 @@ const messages = {
   Alberto: "Alberto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
 };
 
+const roles = {
+  Cesar: "Best Man",
+  Jon: "Groomsman",
+  Jovanne: "Groomsman",
+  Antonio: "Groomsman",
+  Alberto: "Groomsman"
+};
+
 const text = document.getElementById("text");
 const nextBtn = document.getElementById("nextBtn");
 const choices = document.getElementById("choices");
@@ -19,7 +27,7 @@ let step = 0;
 
 const intro = "A personal invitation awaits...";
 const personalMessage = messages[name] || messages.Cesar;
-const question = "Will you be my best man?";
+const question = `Will you be my ${roles[name] || "Groomsman"}?`;
 
 function showText(message) {
   text.classList.remove("show");
