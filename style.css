@@ -37,8 +37,8 @@ h1 {
   font-size: 18px;
   line-height: 1.55;
   min-height: 120px;
-  max-height: none;
-  overflow-y: visible;
+  max-height: 65vh;
+  overflow-y: auto;
   padding: 4px 2px;
 }
 
@@ -113,36 +113,4 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.details-screen {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  text-align: center;
-}
-
-.details-screen h2 {
-  color: #d4af37;
-  font-size: 24px;
-  margin: 0 0 6px;
-}
-
-.detail-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.detail-item strong {
-  color: #d4af37;
-}
-
-.detail-item span {
-  color: white;
-}
-
-.signature {
-  color: #d4af37;
-  font-weight: bold;
-  margin-top: 8px;
 }
