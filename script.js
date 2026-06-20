@@ -9,14 +9,6 @@ const messages = {
   Alberto: "Alberto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
 };
 
-const roles = {
-  Cesar: "Best Man",
-  Jon: "Groomsman",
-  Jovanne: "Groomsman",
-  Antonio: "Groomsman",
-  Alberto: "Groomsman"
-};
-
 const text = document.getElementById("text");
 const nextBtn = document.getElementById("nextBtn");
 const choices = document.getElementById("choices");
@@ -27,6 +19,14 @@ let step = 0;
 
 const intro = "A personal invitation awaits...";
 const personalMessage = messages[name] || messages.Cesar;
+const roles = {
+  Cesar: "Best Man",
+  Jon: "Groomsman",
+  Jovanne: "Groomsman",
+  Antonio: "Groomsman",
+  Alberto: "Groomsman"
+};
+
 const question = `Will you be my ${roles[name] || "Groomsman"}?`;
 
 function showText(message) {
@@ -54,7 +54,34 @@ nextBtn.addEventListener("click", () => {
 });
 
 accept.addEventListener("click", () => {
-  showText("Mission accepted. Welcome to the wedding party.");
+  text.innerHTML = `
+    <strong>Welcome to the Wedding Party</strong><br><br>
+
+    Looking forward to celebrating with you.<br><br>
+
+    <strong>Date:</strong><br>
+    September 18, 2027<br><br>
+
+    <strong>Venue:</strong><br>
+    Whispering Woods<br>
+    Harvard, IL<br><br>
+
+    <strong>Wedding Colors:</strong><br>
+    Sage Green, Terracotta, Ivory, and Gold<br><br>
+
+    <button onclick="window.open('https://forms.gle/8hnj87pxLqhhnxXd9', '_blank')">
+      Submit Information
+    </button>
+
+    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1upGMP3b4jQL3lAfNsWuc30Gsdbj4C-2yp9akQc3a-Po/edit?usp=sharing')">
+      View Wedding Party Contact List
+    </button>
+
+    <br><br>
+
+    <strong>Luis & Jordan</strong>
+  `;
+
   choices.classList.add("hidden");
 });
 
