@@ -13,7 +13,7 @@ const messages = {
 
   Antonio: "Antonio, from the memories we've already made to the ones still ahead, you've been an important part of my life. As Jordan and I prepare for this next chapter, I'd be honored to have you standing beside me and sharing in one of the biggest moments of my life.",
 
-  Alberto: "Alberto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
+  Don Veto: "Don Veto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
 };
 
 const roles = {
@@ -21,7 +21,7 @@ const roles = {
   Jon: "Groomsman",
   Jovanne: "Groomsman",
   Antonio: "Groomsman",
-  Alberto: "Groomsman"
+  Don Veto: "Groomsman"
 };
 
 const text = document.getElementById("text");
