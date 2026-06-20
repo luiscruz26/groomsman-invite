@@ -114,3 +114,35 @@ button:hover {
     transform: translateY(0);
   }
 }
+.details-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.details-screen h2 {
+  color: #d4af37;
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-item strong {
+  color: #d4af37;
+}
+
+.detail-item span {
+  color: white;
+}
+
+.signature {
+  color: #d4af37;
+  font-weight: bold;
+  margin-top: 8px;
+}
