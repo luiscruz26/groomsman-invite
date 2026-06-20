@@ -29,8 +29,11 @@ const nextBtn = document.getElementById("nextBtn");
 const choices = document.getElementById("choices");
 const accept = document.getElementById("accept");
 const decline = document.getElementById("decline");
+const card = document.querySelector(".card");
 
-const personalMessage = messages[name] || messages.Cesar;
+card.classList.add("start-screen");
+
+const personalMessage = messages[name] || "I wanted you to be part of this day with me.";
 const question = `Will you be my ${roles[name] || "Groomsman"}?`;
 
 let step = 0;
@@ -44,18 +47,17 @@ function showText(message) {
   }, 250);
 }
 
-text.classList.add("show");
 text.textContent = "";
+text.classList.add("show");
 
 nextBtn.addEventListener("click", () => {
   step++;
 
   if (step === 1) {
+    card.classList.remove("start-screen");
     showText(personalMessage);
     nextBtn.textContent = "Continue";
-  }
-
-  else if (step === 2) {
+  } else if (step === 2) {
     showText(question);
     nextBtn.classList.add("hidden");
     choices.classList.remove("hidden");
@@ -65,7 +67,6 @@ nextBtn.addEventListener("click", () => {
 accept.addEventListener("click", () => {
   text.innerHTML = `
     <div class="details-screen">
-
       <h2>Welcome to the Wedding Party</h2>
 
       <p>Looking forward to celebrating with you.</p>
@@ -93,10 +94,7 @@ accept.addEventListener("click", () => {
         View Wedding Party Contact List
       </button>
 
-      <p class="signature">
-        Luis & Jordan
-      </p>
-
+      <p class="signature">Luis & Jordan</p>
     </div>
   `;
 
