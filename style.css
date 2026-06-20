@@ -116,3 +116,10 @@ button:hover {
     transform: translateY(0);
   }
 }
+.subtitle {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
