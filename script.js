@@ -13,7 +13,13 @@ const messages = {
 
   Antonio: "Antonio, from the memories we've already made to the ones still ahead, you've been an important part of my life. As Jordan and I prepare for this next chapter, I'd be honored to have you standing beside me and sharing in one of the biggest moments of my life.",
 
-  DonVeto: "Don Veto, true friendships are built through time, trust, and showing up when it matters most. I'm grateful for the memories we've shared and the friendship we've built. It would mean a lot to have you standing beside me as Jordan and I celebrate our wedding day."
+  DonVeto: "Don Veto,
+
+My man, you’ve always been a real one for me. I appreciate you always being there, whether it’s to chill, game, party, or just hang out. You’re always down for whatever, and that means a lot to me.
+
+One thing I really respect about you is that you show up. Not many people always do, but you’ve always been there when it matters, and I don’t take that for granted.
+
+It wouldn’t feel right not having you there. That’s why I went out of my way to make this for you, because I want you there with me on one of the biggest days of my life."
 };
 
 const roles = {
